@@ -5,4 +5,4 @@
 <> a acl:Authorization ;
    acl:agent foaf:Agent ;
    acl:mode acl:Read ;
-   acl:accessToClass eg:publicImage .
+   acl:accessToClass eg:PublicImage .

@@ -45,7 +45,7 @@ WebAC protected resources are linked to ACLs using the ```http://www.w3.org/ns/a
 Each authorization can reference a protected resource or child of the linked protected resource, either by path or by rdf:type.
 
 ### WebAC groups and fcrepo-vagrant
-For testing using the [fcrepo-vagrant](https://github.com/fcrepo4-labs/fcrepo4-vagrant) setup you can pass **Group** information using the _some-header_ Header.
+For testing using the [fcrepo-vagrant](https://github.com/fcrepo4-exts/fcrepo4-vagrant) setup you can pass **Group** information using the _some-header_ Header.
 
 ie. To get a resource using the **Registrars** group.
 
