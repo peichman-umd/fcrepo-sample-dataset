@@ -59,7 +59,6 @@ public class FedoraResourceImport {
         LOGGER.debug("fcrepoUrl: " + fcrepoUrl);
         LOGGER.debug("resources dir: " + dir.getAbsolutePath());
         LOGGER.debug("fcrepo.authUser: " + username);
-        LOGGER.debug("fcrepo.authPassword: " + password);
 
         // Load the resources to protect
         final WebACProtectedResources resource = new WebACProtectedResources(fcrepoUrl, username, password);

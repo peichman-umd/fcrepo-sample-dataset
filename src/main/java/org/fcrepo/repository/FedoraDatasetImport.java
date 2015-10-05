@@ -58,7 +58,6 @@ public class FedoraDatasetImport {
         LOGGER.info("fcrepoUrl:" + fcrepoUrl);
         LOGGER.info("Dataset dir:" + new File(FedoraDatasetImport.class.getResource(dataDir).getFile()).getAbsolutePath());
         LOGGER.info("fcrepo.authUser: " + username);
-        LOGGER.info("fcrepo.authPassword: " + password);
 
         try {
             importTransform(httpClient, fcrepoUrl, username, password);

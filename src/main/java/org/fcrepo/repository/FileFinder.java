@@ -70,10 +70,7 @@ public class FileFinder extends SimpleFileVisitor<Path> {
             final String uriRef = root.relativize(file).toString().replaceAll("\\.ttl$", "");
             LOGGER.info("Creating {} from {}", uriRef, filename);
             putter.put(uriRef, new FileEntity(file.toFile()));
-        } else if (filename.endsWith(".txt") && !filename.startsWith(".")) {
-
         }
-
         return CONTINUE;
     }
 

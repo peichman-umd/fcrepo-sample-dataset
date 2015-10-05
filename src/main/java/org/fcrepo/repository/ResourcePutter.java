@@ -73,7 +73,7 @@ public class ResourcePutter {
         final URI requestURI = baseUrl.resolve(uriRef);
         final HttpPut put = new HttpPut(requestURI);
         if (this.username != null && this.password != null) {
-            LOGGER.debug("Setting credentials to {} : {}", this.username, this.password);
+            LOGGER.debug("Setting credentials to {}", this.username);
             setAuth(put, this.username, this.password);
         }
         put.setEntity(entity);
@@ -94,7 +94,7 @@ public class ResourcePutter {
         final URI requestURI = baseUrl.resolve(uriRef);
         final HttpPatch request = new HttpPatch(requestURI);
         if (this.username != null && this.password != null) {
-            LOGGER.debug("Setting credentials to {} : {}", this.username, this.password);
+            LOGGER.debug("Setting credentials to {}", this.username);
             setAuth(request, this.username, this.password);
         }
         request.setEntity(entity);

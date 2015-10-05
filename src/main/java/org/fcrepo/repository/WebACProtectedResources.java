@@ -6,9 +6,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 import static javax.ws.rs.core.Response.Status.NO_CONTENT;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -38,9 +36,17 @@ public class WebACProtectedResources {
 
     final private HttpClient client;
 
-    final static private List<String> resources = Arrays.asList("webacl_box1", "box/bag/collection", "dark/archive",
-            "dark/archive/sunshine", "public_collection", "mixedCollection");
+    /**
+     * Not currently used
+     */
+    /*
+     * final static private List<String> resources = Arrays.asList("webacl_box1", "box/bag/collection", "dark/archive",
+     * "dark/archive/sunshine", "public_collection", "mixedCollection", "mixedCollection/public_image");
+     */
 
+    /**
+     * Map of resource Uris and WebAC acls to link to them
+     */
     final static private Map<String, String> acl_links;
 
     static {
